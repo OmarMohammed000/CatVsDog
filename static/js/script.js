@@ -14,3 +14,10 @@ document.getElementById("upload-form").addEventListener("submit", function (e) {
         console.error(error);
     });
 });
+document.addEventListener('DOMContentLoaded', function () {
+    const hiddenTextElements = document.querySelectorAll('.animate-text');
+
+    hiddenTextElements.forEach(function (element) {
+        element.classList.add('visible-text');
+    });
+});

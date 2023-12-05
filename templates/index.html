@@ -8,12 +8,26 @@
     <link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.css') }}">
     <script src="{{url_for('static',filename='js/bootstrap.js') }}"></script>
 </head>
-<body>
+<body id="body">
+<section class="container ">
+    <h1 class="hidden-text animate-text"> Never knew the differance between a cat and a dog ?</h1>
+    <h4 class="hidden-textTwo fw-bolder animate-text">Now you can</h4>
+</section>
+<section class="container mt-5 ">
    <form method="post" id="upload-form" enctype="multipart/form-data">
-    <input type="file" name="file" id="fileInput" accept="image/*" required>
-    <button type="submit">Submit</button>
+    <div class="input-group mt-5 mb-5">
+        <label for="fileInput" class="label">
+            <span class="span">Upload a picture</span>
+            <input  type="file" name="file" id="fileInput" accept="image/*" class="form-control bg-dark op-o d-none"  required>
+          </label>
+    </div>
+    <div class="text-center">
+    <button type="submit"  class="text-center btn btn-danger">Submit</button>
+    </div>
    </form>
-   <div class="result"></div>
+   <div class="result class text-light text-center fw-bolder fs-3 mt-5"></div>
+  
+</section>
 <script src="{{ url_for('static',filename='js/script.js') }}"></script>
 </body>
 </html>

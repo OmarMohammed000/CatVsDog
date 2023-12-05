@@ -1,0 +1,68 @@
+/* color palette 
+#1b222c
+#12151c
+#661b1c
+#531516
+#191d26
+*/
+#body{
+    background-color: 	#1b222c;
+    margin-top: 10rem;
+    font-family: monospace;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.hidden-text {
+    color: #661b1c;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out; 
+}
+.hidden-textTwo{
+    opacity: 0;
+    text-align: center;
+    transition: opacity 3s ease-in-out;
+    color: #661b1c;
+}
+.visible-text {
+opacity: 1;
+}
+.op-o{
+    opacity: 0;
+}
+.label {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .label:hover {
+    background-color: #eee;
+    
+  }
+  .span:hover{
+    color: #1b222c;
+  }
+  .span {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fffdfd;
+  }
+  
+  input[type="file"] {
+    position: absolute;
+    left: -9999px;
+  }
+ 
